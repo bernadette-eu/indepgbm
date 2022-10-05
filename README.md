@@ -1,6 +1,6 @@
 # Bayesian analysis of transmission dynamics via diffusion driven multi-type epidemic models with application to COVID-19
 
-Lampros Bouranis$^(1,*)$, Nikolaos Demiris^1, Konstantinos Kalogeropoulos^2, Ioannis Ntzoufras^1
+Lampros Bouranis^(1,*), Nikolaos Demiris^1, Konstantinos Kalogeropoulos^2, Ioannis Ntzoufras^1
 
 ^1 Department of Statistics, Athens University of Economics and Business, Athens, Greece
 
