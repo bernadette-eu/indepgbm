@@ -194,10 +194,10 @@ data_engineering_observations_GR <- function(start_date  = NULL,
   data_cumcases_wide <- data_cumcases_wide[ data_cumcases_wide$Date >= as.Date(start_date, format = "%Y-%m-%d") & 
                                               data_cumcases_wide$Date <= as.Date(end_date,   format = "%Y-%m-%d"),]
   
-  output_list <- list(Deaths    = dt_mortality_analysis_period,
-                      Cases     = dt_cases_analysis_period,
-                      All       = dt_analysis_period,
-                      Cum_Cases = data_cumcases_wide)
+  output_list <- list(Deaths      = dt_mortality_analysis_period,
+                      Cases       = dt_cases_analysis_period,
+                      All         = dt_analysis_period,
+                      Cusum_Cases = data_cumcases_wide)
   
   return(output_list)
   
@@ -426,10 +426,10 @@ data_engineering_observations_AT <- function(start_date = NULL,
   
   data_cumcases_wide <- data_cumcases_wide[reorder_colnames_cumcases]
   
-  output_list <- list(Deaths    = dt_mortality_analysis_period,
-                      Cases     = dt_cases_analysis_period,
-                      All       = dt_analysis_period,
-                      Cum_Cases = data_cumcases_wide)
+  output_list <- list(Deaths      = dt_mortality_analysis_period,
+                      Cases       = dt_cases_analysis_period,
+                      All         = dt_analysis_period,
+                      Cusum_Cases = data_cumcases_wide)
   
   return(output_list)
   
@@ -700,7 +700,7 @@ data_engineering_observations_ENG <- function(start_date = NULL,
                       All                   = dt_analysis_period,
                       Age_distribution      = age_distribution,
                       Age_distribution_aggr = age_distribution_aggr,
-                      Cum_Cases             = data_cumcases_wide)
+                      Cusum_Cases           = data_cumcases_wide)
   
   return(output_list)
   
@@ -739,9 +739,10 @@ data_engineering_observations <- function(country            = c("Greece", "Aust
   
   if ( country %in% c("Greece", "Austria") ){
     
-  output <- list(Deaths    = data_all$Deaths,
-                 Cases     = data_all$Cases,
-                 All       = data_all$All)
+  output <- list(Deaths      = data_all$Deaths,
+                 Cases       = data_all$Cases,
+                 All         = data_all$All,
+                 Cusum_Cases = data_all$Cusum_Cases)
   
   } else if ( country == "England" ){
     

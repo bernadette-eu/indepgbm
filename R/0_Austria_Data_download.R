@@ -5,7 +5,8 @@
 #################################################################################
 
 #---- This downloads and reads in one line:
-dest <- "...//"
+dest      <- "...//"
+data_path <- "...//"
 
 cdb_repo <- osf_retrieve_node("mpwjq")
 
@@ -35,7 +36,7 @@ Austria_5yo_bands_data <- Output_5 %>%
 c(min(Austria_5yo_bands_data$Date), max(Austria_5yo_bands_data$Date))
 
 save(Austria_5yo_bands_data,
-     file = paste0(AU_data_path, "Austria_5yo_bands_data", ".RData"))
+     file = paste0(data_path, "Austria_5yo_bands_data", ".RData"))
 
 #---- Load the dataset:
-load(file = paste0(AU_data_path, "Austria_5yo_bands_data", ".RData"))
+load(file = paste0(data_path, "Austria_5yo_bands_data", ".RData"))
