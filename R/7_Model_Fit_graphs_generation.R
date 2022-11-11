@@ -1006,4 +1006,4 @@ if (country == "Austria"){
 }# End if
 
 #---- Transmissibility, transmission rate, contact matrix:
-( (plot_betat / plot_transrate) | cm_posterior_store_graph ) + plot_annotation(tag_levels =  "A")
+( (plot_betat / cm_posterior_store_graph ) / plot_transrate ) + plot_annotation(tag_levels =  "A")
