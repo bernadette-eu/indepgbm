@@ -4,7 +4,7 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# Bayesian analysis of transmission dynamics via diffusion driven multi-type epidemic models with application to COVID-19
+# Bayesian analysis of diffusion-driven multi-type epidemic models with application to COVID-19
 
 Lampros Bouranis^(1,*), Nikolaos Demiris^1, Konstantinos Kalogeropoulos^2, Ioannis Ntzoufras^1
 
@@ -17,7 +17,10 @@ Lampros Bouranis^(1,*), Nikolaos Demiris^1, Konstantinos Kalogeropoulos^2, Ioann
 arXiv preprint: [link](...)
 
 ## Summary
-We consider a flexible Bayesian evidence synthesis approach to model the age-dependent transmission dynamics of COVID-19 based on daily age-specific mortality counts. The temporal evolution of the age-specific transmission rates in populations containing multiple types of individuals is reconstructed via independent diffusion processes which are assigned to the time-varying key epidemiological parameters. A diffusion-driven susceptible exposed infected removed-type model with age structure is used to capture the age-specific trends in the latent counts of infections and to account for fluctuations in transmission that are influenced by non-modelled phenomena like public health interventions and changes in human behaviour. We analyze the outbreak of COVID-19 in Greece and Austria and validate the proposed Bayesian model using the estimated age-specific counts of cumulative infections from a large-scale seroprevalence survey in England.
+We consider a flexible Bayesian evidence synthesis approach to model the age-specific transmission dynamics of COVID-19 based on daily age-stratified mortality counts. 
+The temporal evolution of transmission rates in populations containing multiple types of individual are reconstructed via an appropriate dimension-reduction formulation driven by independent diffusion processes assigned to the key epidemiological parameters. 
+A suitably tailored Susceptible-Exposed-Infected-Removed (SEIR) compartmental model is used to capture the latent counts of infections and to account for fluctuations in transmission influenced by phenomena like public health interventions and changes in human behaviour.
+We analyze the outbreak of COVID-19 in Greece and Austria and validate the proposed model using the estimated counts of cumulative infections from a large-scale seroprevalence survey in England.
 
 ## Installation
 You can install the development version of the **Bernadette** R library from GitHub following these [installation
