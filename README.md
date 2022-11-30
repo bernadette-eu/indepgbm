@@ -14,7 +14,7 @@ kingdom
 
 ^\* Corresponding author (<bouranis@aueb.gr>)
 
-arXiv preprint: [link](...)
+arXiv preprint: [link](https://arxiv.org/abs/2211.15229)
 
 ## Summary
 

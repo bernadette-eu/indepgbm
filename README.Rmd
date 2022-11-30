@@ -14,7 +14,7 @@ Lampros Bouranis^(1,*), Nikolaos Demiris^1, Konstantinos Kalogeropoulos^2, Ioann
 
 ^* Corresponding author (bouranis@aueb.gr)
 
-arXiv preprint: [link](...)
+arXiv preprint: [link](https://arxiv.org/abs/2211.15229)
 
 ## Summary
 We consider a flexible Bayesian evidence synthesis approach to model the age-specific transmission dynamics of COVID-19 based on daily age-stratified mortality counts. 
